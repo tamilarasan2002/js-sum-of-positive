@@ -1,14 +1,6 @@
- 
-var a=parseInt(prompt("how many value"));
-var b=[a],c=0; 
-for(i=0;i<a;i++){
-    b[i]=parseInt(prompt("Enter the value"));
+var fact=1;
+f=parseInt(prompt("Enter the factorial"));
+for(i=1;i<=f;i++){
+    fact=fact*i;
 }
-    document.write(b+"<br>")
-
-for(j=0;j<a; j++){
-    if(b[j]>0){
-       c=c+b[j]
-    }
-}
-document.write("Sum of positive values= "+c)
+document.write("Factorial of "+f+"="+fact);
